@@ -1,0 +1,16 @@
+{
+  "name": "tocha-dizkon",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.38.0",
+    "vite": "^2.4.4"
+  },
+  "dependencies": {
+    "normalizecss": "^3.0.0"
+  }
+}
