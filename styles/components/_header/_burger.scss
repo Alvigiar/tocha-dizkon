@@ -1,0 +1,80 @@
+@media (max-width: 767px) {
+  .nav-burger {
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 2;
+
+    &__toggle {
+      width: 100%;
+      height: 2px;
+    }
+
+    &__toggle > span::before,
+    &__toggle > span,
+    &__toggle > span::after {
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      transition: 0.3s;
+      background-color: $blue;
+    }
+    &__toggle > span::before {
+      content: "";
+      top: 9px;
+      background-color: #33afe1;
+    }
+    &__toggle > span::after {
+      content: "";
+      top: 18px;
+      background-color: #18e1f7;
+    }
+  }
+
+  .cross > span {
+    background-color: $white;
+  }
+
+  .cross > span::before {
+    background-color: $blue;
+    transform: rotate(45deg);
+  }
+
+  .cross > span::after {
+    background-color: $blue;
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+
+  .nav-content {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    transition: 0.3s;
+
+    &__btn {
+      display: grid;
+      width: 177px;
+      height: 91px;
+      gap: 11px;
+    }
+  }
+
+  .active {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    transition: 0.3s;
+    background-color: $white;
+  }
+
+  .off {
+    overflow: hidden;
+  }
+}

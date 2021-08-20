@@ -1,0 +1,53 @@
+$blue: #685ed6;
+$gray: #f1e4ff;
+$white: #ffffff;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  font-family: Gilroy-Bold;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border-width: 0px;
+}
+
+.nav-btn {
+  &__input {
+    color: $blue;
+    background-color: $gray;
+  }
+  &__reg {
+    color: $white;
+    background-color: $blue;
+  }
+}
+
+@media (min-width: 320px) {
+  .header {
+    margin: 32px 23px 0px 23px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    margin: 32px 40px 0px 40px;
+  }
+  .nav-content{
+    &__btn{
+      display: grid;
+      width: 225px;
+      height: 40px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 11px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    margin: 32px 165px 0px 165px;
+  }
+}

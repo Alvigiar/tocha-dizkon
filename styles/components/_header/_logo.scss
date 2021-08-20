@@ -1,0 +1,44 @@
+.header {
+  &__logo {
+    display: flex;
+
+    &-text {
+      font-family: Gilroy-Bold;
+      line-height: 21px;
+      font-weight: bold;
+      font-style: normal;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    &__logo {
+      width: 95px;
+      height: 30px;
+      &-img {
+        width: 39px;
+        height: 28px;
+      }
+      &-text {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    &__logo {
+      width: 133px;
+      height: 42px;
+      &-img {
+        width: 55px;
+        height: 40px;
+      }
+      &-text {
+        font-size: 28px;
+      }
+    }
+  }
+}

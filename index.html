@@ -1,13 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tocha Dizkon</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__logo">
+      <img src="/img/logo.png" alt="err" class="header__logo-img">
+      <span class="header__logo-text">tocha</span>
+    </div>
+
+    <div class="header__nav header-nav">
+      <div class="header-nav__burger nav-burger">
+        <div class="nav-burger__toggle">
+          <span>
+          </span>
+        </div>
+      </div>
+      <div class="header-nav__content nav-content">
+        <div class="nav-content__btn nav-btn">
+          <button class="nav-btn__input btn">Войти</button>
+          <button class="nav-btn__reg btn">Регистрация</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+  <main>
+
+  </main>
+
+
+  <footer>
+
+  </footer>
+
+
+  <div id="modal-entrance" class="modal-input">
+    <div class="modal-input__box input-box">
+      <button class="input-box__btn-close">Праведный крест</button>
+      <span class="input-box__title">Вход</span>
+      <div class="input-box__entrance entrance">
+        <input class="entrance__login" type="tel" name="Телефон">
+        <input class="entrance__pass" type="password" name="Пароль">
+        <a href="#" class="entrance__remind-pass">Напомнить пароль</a>
+      </div>
+      <button class="input-box__btn-input">Вход</button>
+    </div>
+  </div>
+
+  <div id="app"></div>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
