@@ -1,8 +1,14 @@
 @import '/styles/fonts/fonts';
+
 @import '/styles/components/_header/header';
 @import '/styles/components/_header/logo';
 @import '/styles/components/_header/burger';
-@import '/styles/components/modal';
-@import '/styles/generic/generic';
-@import '/styles/variable/variable';
+@import '/styles/components/modal-entrance';
+@import '/styles/components/modal-registration';
 @import '/styles/components/_footer/footer';
+
+@import '/styles/generic/generic';
+@import '/styles/generic/modal-btn';
+@import '/styles/generic/modal-input';
+
+@import '/styles/variable/variable';

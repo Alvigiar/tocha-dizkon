@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Nunito-Sans;
+  src: url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+}
+
 @font-face{
   font-family: 'Gilroy-Bold';
   src: url('/fonts/Gilroy/Gilroy-Bold.eot');
@@ -7,4 +12,15 @@
     url('/fonts/Gilroy/Gilroy-Bold.svg#Gilroy') format('svg');
   font-style: normal;
   font-weight: bold;
+}
+
+@font-face{
+  font-family: 'Gilroy-Regular';
+  src: url('/fonts/Gilroy/Gilroy-Regular.eot');
+  src: url('/fonts/Gilroy/Gilroy-Regular.eot?iefix') format('eot'),
+    url('/fonts/Gilroy/Gilroy-Regular.woff') format('woff'),
+    url('/fonts/Gilroy/Gilroy-Regular.ttf') format('truetype'),
+    url('/fonts/Gilroy/Gilroy-Regular.svg#Gilroy') format('svg');
+  font-style: normal;
+  font-weight: normal;
 }
