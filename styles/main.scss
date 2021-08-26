@@ -1,14 +1,19 @@
-@import '/styles/fonts/fonts';
+@import './variable/variable';
+@import './fonts/fonts';
 
-@import '/styles/components/_header/header';
-@import '/styles/components/_header/logo';
-@import '/styles/components/_header/burger';
-@import '/styles/components/modal-entrance';
-@import '/styles/components/modal-registration';
-@import '/styles/components/_footer/footer';
+@import './generic/generic';
+@import './generic/modal';
+@import './generic/modal-btn';
+@import './generic/modal-input';
 
-@import '/styles/generic/generic';
-@import '/styles/generic/modal-btn';
-@import '/styles/generic/modal-input';
+@import './components/header/header';
+@import './components/header/logo';
+@import './components/header/burger';
+@import './components/modal-entrance';
+@import './components/modal-registration';
+@import './components/footer/footer';
 
-@import '/styles/variable/variable';
+
+main{
+    height: 1000px;
+}
