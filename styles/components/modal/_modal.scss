@@ -1,0 +1,27 @@
+button[value="Войти"] {
+  width: 340px;
+  height: 48px;
+  border-radius: 6px;
+  border-width: 0px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+}
+
+.modal {
+  &--show{
+    display: grid;
+  }
+  // Общие стили для entrance и reg, по типу display: grid; gap: 30px
+}
+
+.modal-background {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background: rgba(183, 183, 183, 0.6);
+}
+
+// .show-modal{
+//   display: grid;
+// }

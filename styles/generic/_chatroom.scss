@@ -1,0 +1,104 @@
+.chatroom {
+  display: grid;
+  gap: 48px;
+
+  &-box {
+    display: grid;
+    gap: 32px;
+  }
+
+  &-head {
+    font-family: Gilroy-Bold;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+
+    &__title {
+      color: $blue;
+    }
+    &__subtitle {
+      color: black;
+    }
+  }
+
+  &-promotion {
+    width: 90vw;
+    font-size: 18px;
+    line-height: 28px;
+
+    &__text {
+      font-family: Gilroy-Regular;
+      font-weight: 400;
+    }
+    &__link {
+      font-family: Gilroy-Bold;
+      font-weight: 800;
+      text-decoration: none;
+      color: $blue;
+    }
+    &__btn {
+      width: 168px;
+      height: 48px;
+      color: white;
+      background-color: $blue;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .chatroom {
+    grid-template-columns: repeat(2, 1fr);
+
+    &-promotion {
+      width: 270px;
+    }
+
+    &__img {
+      width: 420px;
+      height: 338px;
+      right: 40px;
+      z-index: 1;
+      position: absolute;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .chatroom {
+    &__img {
+      right: 40px;
+      width: 420px;
+      height: 338px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .chatroom {
+    &-promotion {
+      width: 482px;
+    }
+
+    &-head{
+      font-size: 50px;
+      line-height: 60px;
+    }
+
+    &-promotion{
+      &__text{
+        font-size: 24px;
+        line-height: 34px;
+      }
+    }
+
+    &__img {
+      right: 165px;
+      width: 725px;
+      height: 583px;
+    }
+  }
+}

@@ -1,29 +1,28 @@
-import '/styles/main.scss';
-import '/node_modules/normalizecss/normalize.css';
+import './styles/main.scss';
+import './node_modules/normalizecss/normalize.css';
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  const btnBurger = document.querySelector('.nav-burger')
-  const btnInput = document.querySelector('.nav-btn__input')
-  const modalInput = document.querySelector('.modal-input')
-  const modalInputClose = document.querySelector('.input-box__btn-close')
+  const burgerBtn = document.querySelector('.header-burger')
+  const htmlBody = document.querySelector('body')
+  const modalEntranceOpen = document.querySelector('.header-cell__btn-input')
+  const modalEntranceClose = document.querySelector('.entrance-box__btn-close')
+  const entranceBox = document.querySelector('.entrance')
 
-  const headBurger = document.querySelector('.header-nav__content')
-
-  btnBurger.addEventListener('click', () => {
-    document.querySelector('.header-nav__content').classList.toggle('active'),
-      document.querySelector('body').classList.toggle('off'),
-      document.querySelector('.nav-burger__toggle').classList.toggle('cross')
+  burgerBtn.addEventListener('click', () => {
+    document.querySelector('.header-content').classList.toggle('active'),
+      htmlBody.classList.toggle('off'),
+      document.querySelector('.header-burger__toggle').classList.toggle('cross')
   })
 
-  btnInput.addEventListener('click', () => {
-    modalInput.classList.add('modal-input-show'),
-    document.querySelector('body').classList.add('off'),
-    document.querySelector('.input-box__background').classList.add('.show-back')
+  modalEntranceOpen.addEventListener('click', () => {
+    entranceBox.classList.add('modal--show'),
+      htmlBody.classList.add('off')
   })
 
-  modalInputClose.addEventListener('click', () => {
-    modalInput.classList.remove('modal-input-show'),
-    document.querySelector('body').classList.remove('off')
+  modalEntranceClose.addEventListener('click', () => {
+    entranceBox.classList.remove('modal--show'),
+      htmlBody.classList.remove('off')
   })
 })
+

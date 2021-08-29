@@ -1,34 +1,53 @@
 @media (max-width: 767px) {
-  .nav-burger {
-    position: relative;
-    width: 30px;
-    height: 18px;
-    cursor: pointer;
-    z-index: 2;
+  .header {
+    &-burger {
+      position: relative;
+      width: 30px;
+      height: 18px;
+      cursor: pointer;
+      z-index: 2;
 
-    &__toggle {
-      width: 100%;
-      height: 2px;
+      &__toggle {
+        width: 100%;
+        height: 2px;
+      }
+
+      &__toggle > span::before,
+      &__toggle > span,
+      &__toggle > span::after {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        transition: 0.3s;
+        background-color: $blue;
+      }
+      &__toggle > span::before {
+        content: "";
+        top: 9px;
+        background-color: #33afe1;
+      }
+      &__toggle > span::after {
+        content: "";
+        top: 18px;
+        background-color: #18e1f7;
+      }
     }
 
-    &__toggle > span::before,
-    &__toggle > span,
-    &__toggle > span::after {
+    &-content {
+      display: grid;
+      align-items: center;
+      justify-content: center;
       position: absolute;
-      width: 100%;
-      height: 2px;
+      top: -100px;
+      right: -100px;
       transition: 0.3s;
-      background-color: $blue;
-    }
-    &__toggle > span::before {
-      content: "";
-      top: 9px;
-      background-color: #33afe1;
-    }
-    &__toggle > span::after {
-      content: "";
-      top: 18px;
-      background-color: #18e1f7;
+
+      &__cell {
+        display: grid;
+        width: 177px;
+        height: 91px;
+        gap: 11px;
+      }
     }
   }
 
@@ -44,24 +63,6 @@
   .cross > span::after {
     background-color: $blue;
     transform: translateY(-9px) rotate(-45deg);
-  }
-
-
-  .nav-content {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: -100px;
-    right: -100px;
-    transition: 0.3s;
-
-    &__btn {
-      display: grid;
-      width: 177px;
-      height: 91px;
-      gap: 11px;
-    }
   }
 
   .active {

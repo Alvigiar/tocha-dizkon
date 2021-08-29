@@ -1,26 +1,28 @@
 .header {
-  &__logo {
+  &-logo {
     display: flex;
-
-    &-text {
+    text-decoration: none;
+    
+    &__text {
       font-family: Gilroy-Bold;
       line-height: 21px;
       font-weight: bold;
       font-style: normal;
+      color: black;
     }
   }
 }
 
 @media (max-width: 767px) {
   .header {
-    &__logo {
+    &-logo {
       width: 95px;
       height: 30px;
-      &-img {
+      &__img {
         width: 39px;
         height: 28px;
       }
-      &-text {
+      &__text {
         font-size: 20px;
       }
     }
@@ -29,14 +31,14 @@
 
 @media (min-width: 768px) {
   .header {
-    &__logo {
+    &-logo {
       width: 133px;
       height: 42px;
-      &-img {
+      &__img {
         width: 55px;
         height: 40px;
       }
-      &-text {
+      &__text {
         font-size: 28px;
       }
     }

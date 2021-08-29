@@ -9,33 +9,52 @@
 </head>
 
 <body>
-
   <header class="header">
-    <div class="header__logo">
-      <img src="/img/logo.png" alt="err" class="header__logo-img">
-      <span class="header__logo-text">tocha</span>
-    </div>
-
-    <div class="header__nav header-nav">
-      <div class="header-nav__burger nav-burger">
-        <div class="nav-burger__toggle">
+    <a href="#logo" class="header__logo header-logo">
+      <img src="/img/logo.png" alt="err" class="header-logo__img">
+      <span class="header-logo__text">tocha</span>
+    </a>
+    <div class="header__box header-box">
+      <div class="header-box__burger header-burger">
+        <div class="header-burger__toggle">
           <span>
           </span>
         </div>
       </div>
-      <div class="header-nav__content nav-content">
-        <div class="nav-content__btn nav-btn">
-          <button class="nav-btn__input btn">Вход</button>
-          <button class="nav-btn__reg btn">Регистрация</button>
+      <div class="header-box__content header-content">
+        <div class="header-content__cell header-cell">
+          <button class="header-cell__btn-input btn">Вход</button>
+          <button class="header-cell__btn-reg btn">Регистрация</button>
         </div>
       </div>
     </div>
   </header>
 
+  <main class="wrapper">
+    <section class="chatroom">
+      <div class="chatroom__box chatroom-box">
+        <div class="chatroom-box__heading chatroom-head">
+          <span class="chatroom-head__title">Telegram чат</span>
+          <br>
+          <span class="chatroom-head__subtitle">на вашем сайте</span>
+        </div>
+        <div class="chatroom-box__promotion chatroom-promotion">
+          <span class="chatroom-promotion__text">
+            Общение с клиентами станет простым и удобным, а подключение займёт 5 минут.
+            <br>
+            Первый месяц —
+            <a href="#free" class="chatroom-promotion__link">бесплатно!</a>
+          </span>
+        </div>
+        <button class="chatroom-promotion__btn btn">Подключить</button>
+      </div>
+      <img src="/img/chat.png" alt="err" class="chatroom__img">
+    </section>
 
+    <!-- <section class="feature">
+      test
+    </section> -->
 
-
-  <main>
 
   </main>
 
@@ -47,18 +66,22 @@
   <div class="modal-background">
   </div>
 
-  <div id="modal-entrance" class="modal-input">
-    <div class="modal-input__box input-box">
-      <button class="input-box__btn-close">Праведный крест</button>
-      <span class="input-box__title">Вход</span>
-      <div class="input-box__entrance entrance">
-        <input class="entrance__login" type="tel" name="telephone" placeholder="Телефон">
-        <input class="entrance__pass" type="password" name="password" placeholder="Пароль">
-        <a href="#" class="entrance__remind-pass">Напомнить пароль</a>
+  <div id="modal-entrance" class="entrance">
+    <div class="entrance__box entrance-box">
+      <button class="entrance-box__btn-close">Праведный крест</button>
+      <span class="entrance-box__title">Вход</span>
+      <div class="entrance-box__fields entrance-fields">
+        <input class="entrance-fields__login" type="tel" name="telephone" placeholder="Телефон">
+        <input class="entrance-fields__pass" type="password" name="password" placeholder="Пароль">
+        <a href="#remind-pass" class="entrance-fields__remind-pass">Напомнить пароль</a>
       </div>
-      <button class="input-box__btn-input" value="Войти">Войти</button>
+      <button class="entrance-box__btn-input" value="Войти">Войти</button>
     </div>
   </div>
+
+  <div id="modal-reg" class="registr">
+  </div>
+
 
   <script type="module" src="/main.js"></script>
 </body>

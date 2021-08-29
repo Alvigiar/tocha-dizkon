@@ -1,19 +1,26 @@
+// variable
 @import './variable/variable';
 @import './fonts/fonts';
 
+// generic
 @import './generic/generic';
-@import './generic/modal';
-@import './generic/modal-btn';
-@import './generic/modal-input';
+@import './generic/chatroom';
+@import './generic/feature';
 
+// componenst header
 @import './components/header/header';
 @import './components/header/logo';
 @import './components/header/burger';
-@import './components/modal-entrance';
-@import './components/modal-registration';
+
+// components footer
 @import './components/footer/footer';
 
+// components modal
+@import './components/modal/modal-entrance';
+@import './components/modal/modal-registration';
+@import './components/modal/modal';
 
+// test
 main{
     height: 1000px;
 }

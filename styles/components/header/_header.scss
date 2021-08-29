@@ -1,8 +1,3 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-}
-
 .btn {
   font-family: Gilroy-Bold;
   padding: 10px 20px;
@@ -10,40 +5,46 @@
   border-width: 0px;
 }
 
-.nav-btn {
-  &__input {
-    color: $blue;
-    background-color: $gray;
-  }
-  &__reg {
-    color: $white;
-    background-color: $blue;
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  &-cell {
+    &__btn-input {
+      color: $blue;
+      background-color: $gray;
+    }
+    &__btn-reg {
+      color: $white;
+      background-color: $blue;
+    }
   }
 }
 
 @media (min-width: 320px) {
   .header {
-    margin: 32px 23px 0px 23px;
+    margin: 32px 23px 40px 23px;
   }
 }
 
 @media (min-width: 768px) {
   .header {
-    margin: 32px 40px 0px 40px;
-  }
-  .nav-content{
-    &__btn{
-      display: grid;
-      width: 225px;
-      height: 40px;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 11px;
+    margin: 32px 40px 40px 40px;
+
+    &-content {
+      &__cell {
+        display: grid;
+        width: 225px;
+        height: 40px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 11px;
+      }
     }
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .header {
-    margin: 32px 165px 0px 165px;
+    margin: 32px 165px 92px 165px;
   }
 }
