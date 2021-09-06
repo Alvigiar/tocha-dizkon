@@ -1,5 +1,118 @@
 .feature{
-  width: 100%;
-  height: 500px;
-  background-color: chocolate;
+  margin: 60px 0px 0px 0px;
+  display: grid;
+  gap: 30px;
+
+  &__title{
+    font-family: Gilroy-Bold;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  &-content{
+    display: grid;
+    gap: 16px;
+  }
+
+  &-quality{
+    display: grid;
+    grid-column-gap: 18px;
+    grid-row-gap: 4px;
+    align-items: center;
+    grid-template-columns: 42px;
+    
+    &__img{
+      grid-column: 1;
+      grid-row: span 2;
+      width: 42px;
+      height: 42px;
+    }
+
+    &__title{
+      grid-column: 2;
+      font-family: Gilroy-Bold;
+      font-size: 20px;
+      line-height: 32px;
+    }
+
+    &__text{
+      grid-column: 2;
+      font-family: Gilroy-Regular;
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+  }
+
+  &__img{
+    display: grid;
+    width: 100%;
+    height: 487px;
+    background-image: url('/img/telephone-chat.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 768px) {
+  .feature{
+    margin: 133px 0px 0px 0px;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__img{
+      position: absolute;
+      right: 40px;
+      background-position: right;
+      grid-column: 2;
+      grid-row: span 2/2;
+    }
+
+    &__title{
+      grid-column: 1;
+    }
+
+    &__content{
+      grid-column: 1;
+      grid-template-columns: 374px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .feature{
+    margin: 380px 0px 0px 0px;
+    align-items: center;
+    gap: 68px 76px;
+
+    &__title{
+      font-size: 48px;
+      line-height: 32px;
+    }
+
+    &-content{
+      gap: 48px;
+      grid-template-columns: 550px;
+    }
+
+    &-quality{
+      gap: 8px 26px;
+      grid-template-columns: 68px;
+
+      &__img{
+        width: 68px;
+        height: 68px;
+      }
+
+      &__title{
+        font-size: 24px;
+      }
+    }
+
+    &__img{
+      right: 265px;
+      width: 411px;
+      height: 666px;
+    }
+  }
 }

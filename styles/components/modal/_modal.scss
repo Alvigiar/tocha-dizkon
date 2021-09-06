@@ -7,7 +7,7 @@ button[value="Войти"] {
 }
 
 .modal {
-  &--show{
+  &--show {
     display: grid;
   }
   // Общие стили для entrance и reg, по типу display: grid; gap: 30px
@@ -22,6 +22,24 @@ button[value="Войти"] {
   background: rgba(183, 183, 183, 0.6);
 }
 
-// .show-modal{
-//   display: grid;
-// }
+// new modal
+
+.modal {
+  &-back {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
+    position: fixed;
+    background: rgba(183, 183, 183, 0.6);
+  }
+  
+  &-box{
+  }
+
+  &--show{
+    display: grid;
+  }
+}
