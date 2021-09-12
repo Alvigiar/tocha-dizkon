@@ -1,0 +1,45 @@
+.connection{
+  display: grid;
+  margin: 54px 0px 0px 0px;
+
+  &__title{
+    margin: 0px 0px 24px 0px;
+    font-family: Gilroy-Bold;
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1440px) {
+  .connection{
+    margin: 100px 0px 0px 0px;
+
+    &__title{
+      margin: 0px 0px 40px 0px;
+      font-family: Gilroy-Bold;
+      font-size: 46px;
+      line-height: 64px;
+    }
+  }
+}

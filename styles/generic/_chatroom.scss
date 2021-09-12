@@ -1,6 +1,7 @@
 .chatroom {
   display: grid;
   gap: 48px;
+  margin: 40px 0px 0px 0px;
 
   &-box {
     display: grid;
@@ -83,6 +84,13 @@
 
 @media (min-width: 1440px) {
   .chatroom {
+    margin: 95px 0px 0px 0px;
+    grid-template-rows: 25px 335px;
+
+    &-box{
+      grid-row: 2;
+    }
+
     &-promotion {
       width: 482px;
     }
@@ -101,7 +109,6 @@
 
     &__image {
       position: absolute;
-      z-index: -1;
       right: 165px;
       width: 725px;
       height: 583px;

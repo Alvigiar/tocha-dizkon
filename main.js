@@ -42,3 +42,24 @@ back.addEventListener('click', (e) => {
     console.log('click')
   }
 })
+
+
+
+// swiper 
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2.2
+    },
+    1440: {
+      slidesPerView: 3
+    }
+  },
+});

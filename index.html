@@ -6,88 +6,172 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tocha Dizkon</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
-  <header class="header">
-    <a href="#logo" class="header__logo header-logo">
-      <img src="/img/logo.png" alt="err" class="header-logo__img">
-      <span class="header-logo__text">tocha</span>
-    </a>
-    <div class="header__box header-box">
-      <div class="header-box__burger header-burger">
-        <div class="header-burger__toggle">
-          <span>
-          </span>
-        </div>
-      </div>
-      <div class="header-box__content header-content">
-        <div class="header-content__cell header-cell">
-          <button class="header-cell__btn-input btn">Вход</button>
-          <button class="header-cell__btn-reg btn">Регистрация</button>
-        </div>
-      </div>
-    </div>
-  </header>
 
-  <main class="wrapper">
-    <section class="chatroom">
-      <div class="chatroom__box chatroom-box">
-        <div class="chatroom-box__heading chatroom-head">
-          <span class="chatroom-head__title">Telegram чат</span>
-          <br>
-          <span class="chatroom-head__subtitle">на вашем сайте</span>
+  <div class="back-shadow">
+
+    <header class="header">
+      <a href="#logo" class="header__logo header-logo">
+        <img src="/img/logo.png" alt="err" class="header-logo__img">
+        <span class="header-logo__text">tocha</span>
+      </a>
+      <div class="header__box header-box">
+        <div class="header-box__burger header-burger">
+          <div class="header-burger__toggle">
+            <span>
+            </span>
+          </div>
         </div>
-        <div class="chatroom-box__promotion chatroom-promotion">
-          <span class="chatroom-promotion__text">
-            Общение с клиентами станет простым и удобным, а подключение займёт 5 минут.
+        <div class="header-box__content header-content">
+          <div class="header-content__cell header-cell">
+            <button class="header-cell__btn-input btn">Вход</button>
+            <button class="header-cell__btn-reg btn">Регистрация</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <article class="wrapper">
+
+      <section class="chatroom">
+        <div class="chatroom__box chatroom-box">
+          <div class="chatroom-box__heading chatroom-head">
+            <span class="chatroom-head__title">Telegram чат</span>
             <br>
-            Первый месяц —
-            <a href="#free" class="chatroom-promotion__link">бесплатно!</a>
-          </span>
+            <span class="chatroom-head__subtitle">на вашем сайте</span>
+          </div>
+          <div class="chatroom-box__promotion chatroom-promotion">
+            <span class="chatroom-promotion__text">
+              Общение с клиентами станет простым и удобным, а подключение займёт 5 минут.
+              <br>
+              Первый месяц —
+              <a href="#free" class="chatroom-promotion__link">бесплатно!</a>
+            </span>
+          </div>
+          <button class="chatroom-promotion__btn btn">Подключить</button>
         </div>
-        <button class="chatroom-promotion__btn btn">Подключить</button>
+        <div class="chatroom__image">
+        </div>
+      </section>
+
+      <section class="feature">
+        <span class="feature__title">Tocha Online - это</span>
+        <div class="feature__content feature-content">
+          <div class="feature-content__quality feature-quality">
+            <img src="/img/quality_1.png" alt="err" class="feature-quality__img">
+            <span class="feature-quality__title">Ничего лишнего</span>
+            <span class="feature-quality__text">Отсутствие лишних приложений для операторов. Оператору не нужно учиться
+              работать с чатом</span>
+          </div>
+          <div class="feature-content__quality feature-quality">
+            <img src="/img/quality_2.png" alt="err" class="feature-quality__img">
+            <span class="feature-quality__title">Простота</span>
+            <span class="feature-quality__text">Простая установка на сайт</span>
+          </div>
+          <div class="feature-content__quality feature-quality">
+            <img src="/img/quality_3.png" alt="err" class="feature-quality__img">
+            <span class="feature-quality__title">Несколько ассистентов</span>
+            <span class="feature-quality__text">Возможность подключения нескольких ассистентов</span>
+          </div>
+          <div class="feature-content__quality feature-quality">
+            <img src="/img/quality_4.png" alt="err" class="feature-quality__img">
+            <span class="feature-quality__title">Кастомизация</span>
+            <span class="feature-quality__text">Настройка интерфейса под нужды сайта</span>
+          </div>
+        </div>
+        <div class="feature__img">
+        </div>
+      </section>
+
+    </article>
+
+  </div>
+
+  <article class="wrapper">
+
+    <section class="tariff">
+      <div class="tariff__head tariff-head">
+        <span class="tariff-head__title">Тарифы</span>
+        <span class="tariff-head__subtitle">Стоимость зависит от трафика сайта</span>
       </div>
-      <div class="chatroom__image">
+      <div class="tariff__choice tariff-choise">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide tariff-choise__option tariff-option">
+              <span class="tariff-option__title">
+                Бесплатно
+              </span>
+              <span class="tariff-option__text">
+                Пробный период на 1 месяц
+              </span>
+              <span class="tariff-option__price">
+                0₽/первый месяц
+              </span>
+              <button class="tariff-option__connect">Подключить за 0₽</button>
+            </div>
+
+            <div class="swiper-slide tariff-choise__option tariff-option">
+              <span class="tariff-option__title">
+                Базовый
+              </span>
+              <span class="tariff-option__text">
+                Менее 1000 посещений в сутки
+              </span>
+              <span class="tariff-option__price">
+                200₽/первый месяц
+              </span>
+              <button class="tariff-option__connect">Подключить за 200₽</button>
+            </div>
+
+            <div class="swiper-slide tariff-choise__option tariff-option">
+              <span class="tariff-option__title">
+                Премиум
+              </span>
+              <span class="tariff-option__text">
+                Более 1000 посещений в сутки
+              </span>
+              <span class="tariff-option__price">
+                500₽/первый месяц
+              </span>
+              <button class="tariff-option__connect">Подключить за 500₽</button>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
     </section>
 
-    <section class="feature">
-      <span class="feature__title">Tocha Online - это</span>
-      <div class="feature__content feature-content">
-        <div class="feature-content__quality feature-quality">
-          <img src="/img/quality_1.png" alt="err" class="feature-quality__img">
-          <span class="feature-quality__title">Ничего лишнего</span>
-          <span class="feature-quality__text">Отсутствие лишних приложений для операторов. Оператору не нужно учиться работать с чатом</span>
+    <section class="connection">
+      <div class="connection__title">Всего 3 шага для подключения Telegram чата</div>
+      <div class="connection__step connection-step">
+        <div class="connection-step__bot">
+          <span class="connection-step__number">1</span>
+          <span class="connection-step__title">Telegram bot</span>
+          <span class="connection-step__text">Вы создаёте Telegram бота для вашего сайта</span>
         </div>
-        <div class="feature-content__quality feature-quality">
-          <img src="/img/quality_2.png" alt="err" class="feature-quality__img">
-          <span class="feature-quality__title">Простота</span>
-          <span class="feature-quality__text">Простая установка на сайт</span>
+        <div class="connection-step__tocha">
+          <span class="connection-step__number">2</span>
+          <span class="connection-step__title">Подключение Tocha</span>
+          <span class="connection-step__text">Tocha подключает Telegram бота к вашиму сайту</span>
         </div>
-        <div class="feature-content__quality feature-quality">
-          <img src="/img/quality_3.png" alt="err" class="feature-quality__img">
-          <span class="feature-quality__title">Несколько ассистентов</span>
-          <span class="feature-quality__text">Возможность подключения нескольких ассистентов</span>
+        <div class="connection-step__chat">
+          <span class="connection-step__number">3</span>
+          <span class="connection-step__title">Telegram-чат</span>
+          <span class="connection-step__text">Консультант отвечает на вопросы посетителей сайта</span>
         </div>
-        <div class="feature-content__quality feature-quality">
-          <img src="/img/quality_4.png" alt="err" class="feature-quality__img">
-          <span class="feature-quality__title">Кастомизация</span>
-          <span class="feature-quality__text">Настройка интерфейса под нужды сайта</span>
-        </div>
-      </div>
-      <div class="feature__img">
       </div>
     </section>
+  
+  </article>
 
-
-  </main>
 
 
   <footer>
 
   </footer>
-
 
   <div id="modalEntrance" class="modal-back">
     <div class="modal-box">
@@ -99,6 +183,7 @@
 
 
 
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script type="module" src="/main.js"></script>
 </body>
 

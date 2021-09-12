@@ -7,6 +7,8 @@
 
 .header {
   display: flex;
+  margin: 0px 23px 0px 23px;
+  padding: 32px 0px 0px 0px;
   justify-content: space-between;
 
   &-cell {
@@ -21,15 +23,9 @@
   }
 }
 
-@media (min-width: 320px) {
-  .header {
-    margin: 32px 23px 40px 23px;
-  }
-}
-
 @media (min-width: 768px) {
   .header {
-    margin: 32px 40px 40px 40px;
+    margin: 0px 40px 0px 40px;
 
     &-content {
       &__cell {
@@ -45,6 +41,6 @@
 
 @media (min-width: 1440px) {
   .header {
-    margin: 32px 165px 92px 165px;
+    margin: 0px 165px 0px 165px;
   }
 }
