@@ -1,6 +1,7 @@
 .swiper {
   width: 100%;
   height: 100%;
+  padding-bottom: 24px;
 }
 
 .tariff {
@@ -35,6 +36,7 @@
   }
 
   &-option {
+    overflow: hidden;
     display: grid;
     margin-bottom: 24px;
     text-align: center;
