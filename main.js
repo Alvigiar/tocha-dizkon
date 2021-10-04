@@ -1,5 +1,6 @@
 import './styles/main.scss';
 import './node_modules/normalizecss/normalize.css';
+import Swiper, { Autoplay } from 'swiper';
 
 
 // document.addEventListener('DOMContentLoaded', () => {
@@ -43,11 +44,8 @@ back.addEventListener('click', (e) => {
   }
 })
 
-
-
 // swiper 
-
-var swiper = new Swiper(".mySwiper", {
+var swiperTarif = new Swiper(".swiperTariff", {
   slidesPerView: 1,
   spaceBetween: 30,
   pagination: {
@@ -63,3 +61,34 @@ var swiper = new Swiper(".mySwiper", {
     }
   },
 });
+
+var swiperConnection = new Swiper(".swiperConnection", {
+  slidesPerView: 1.5,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3
+    },
+  },
+});
+
+var swiperRevievs = new Swiper (".swiperRevievs", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 1.5
+    },
+    1440: {
+      slidesPerView: 2
+    },
+  },
+})

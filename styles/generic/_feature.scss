@@ -1,13 +1,15 @@
 .feature {
-  margin: 60px 0px 0px 0px;
-  padding: 0px 0px 60px 0px;
-  display: grid;
-  gap: 30px;
+  &-box{
+    margin: 60px 0px 0px 0px;
+    padding: 0px 0px 60px 0px;
+    display: grid;
+    gap: 30px;
 
-  &__title {
-    font-family: Gilroy-Bold;
-    font-size: 32px;
-    line-height: 40px;
+    &__title {
+      font-family: Gilroy-Bold;
+      font-size: 32px;
+      line-height: 40px;
+    }
   }
 
   &-content {
@@ -57,9 +59,11 @@
 
 @media (min-width: 768px) {
   .feature {
-    margin: 133px 0px 0px 0px;
-    padding: 0px 0px 90px 0px;
-    grid-template-columns: repeat(2, 1fr);
+    &-box{
+      margin: 133px 0px 0px 0px;
+      padding: 0px 0px 90px 0px;
+      grid-template-columns: repeat(2, 1fr);
+    }
 
     &__img {
       position: absolute;
@@ -73,7 +77,7 @@
       grid-column: 1;
     }
 
-    &__content {
+    &-content {
       grid-column: 1;
       grid-template-columns: 374px;
     }
@@ -82,10 +86,12 @@
 
 @media (min-width: 1440px) {
   .feature {
-    margin: 380px 0px 0px 0px;
-    padding: 0px 0px 180px 0px;
-    align-items: center;
-    gap: 68px 76px;
+    &-box{
+      margin: 380px 0px 0px 0px;
+      padding: 0px 0px 180px 0px;
+      align-items: center;
+      gap: 68px 76px;
+    }
 
     &__title {
       font-size: 48px;

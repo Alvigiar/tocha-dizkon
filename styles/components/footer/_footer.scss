@@ -1,0 +1,107 @@
+.footer{
+  display: grid;
+  margin-top: 54px;
+  padding-top: 60px;
+  gap: 40px;
+  background-color: #1D2530;
+  color: white;
+
+  &-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // gap: 30px;
+
+    &__list-box{
+      display: grid;
+      gap: 24px 0px;
+    }
+  }
+
+  &-logo{
+    &__link{
+      display: grid;
+      gap: 10px;
+      text-decoration: none;
+      color: white;
+    }
+
+    &__img{
+      width: 81px;
+      height: 59px;
+    }
+
+    &__text{
+      font-family: Gilroy-Bold;
+      font-size: 32px;
+      line-height: 24px;
+    }
+  }
+
+  &-list{
+    display: grid;
+    gap: 8px;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+
+    &__subtitle{
+      margin-bottom: 8px;
+      font-family: Gilroy-Regular;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &__link{
+      text-decoration: none;
+      font-family: Gilroy-Regular;
+      font-size: 16px;
+      line-height: 26px;
+      color: white;
+    }
+  }
+
+  &-signature{
+    padding: 25px 0px;
+    background-color: #141B23;
+
+    &__text{
+      font-family: Gilroy-Regular;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .footer{
+    &-content{
+      &__list-box{
+        grid-template-columns: 160px 190px;
+        gap: 0px 20px;
+      }
+    }
+
+  }
+
+  .list{
+    &-chat{
+      grid-column: 1;
+    }
+
+    &-support{
+      grid-column: 2;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer{
+    padding-top: 111px;
+
+    &-content{
+      &__list-box{
+        gap: 0px 126px;
+      }
+    }
+  }
+}
