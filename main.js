@@ -1,6 +1,13 @@
 import './styles/main.scss';
 import './node_modules/normalizecss/normalize.css';
-import Swiper, { Autoplay } from 'swiper';
+
+// swiper connect
+import Swiper, { Navigation, Pagination } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+Swiper.use([Navigation, Pagination]);
 
 
 // document.addEventListener('DOMContentLoaded', () => {
@@ -28,7 +35,6 @@ import Swiper, { Autoplay } from 'swiper';
 // })
 
 // new modal func
-
 document.querySelector('.header-cell__btn-input').addEventListener('click', () => {
   document.querySelector('#modalEntrance').classList.add('modal--show')
 })
@@ -45,7 +51,7 @@ back.addEventListener('click', (e) => {
 })
 
 // swiper 
-var swiperTarif = new Swiper(".swiperTariff", {
+var swiperTariff = new Swiper(".swiperTariff", {
   slidesPerView: 1,
   spaceBetween: 30,
   pagination: {
@@ -54,7 +60,7 @@ var swiperTarif = new Swiper(".swiperTariff", {
   },
   breakpoints: {
     768: {
-      slidesPerView: 2.2
+      slidesPerView: 2
     },
     1440: {
       slidesPerView: 3

@@ -27,8 +27,6 @@
 
   &-choise {
     display: grid;
-    // grid-template-columns: repeat(3, 1fr);
-    // gap: 0px 30px;
   }
 
   &-option {
@@ -85,29 +83,7 @@
   }
 }
 
-// .swiperTariff.swiper:before {
-//   content: '';
-//   z-index: 1000;
-//   position: absolute;
-//   left: 0;
-//   top: 0;
-//   bottom: 0;
-//   height: 100%;
-//   width: 30px;
-//   background: linear-gradient(90deg, white 50%, #00000000);
-// }
 
-// .swiperTariff.swiper:after {
-//   content: '';
-//   z-index: 1000;
-//   position: absolute;
-//   right: 0;
-//   top: 0;
-//   bottom: 0;
-//   height: 100%;
-//   width: 30px;
-//   background: linear-gradient(270deg, white 50%, #00000000);
-// }
 
 @media (min-width:768px) {
   .tariff{

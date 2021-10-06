@@ -1,3 +1,25 @@
+.off {
+  overflow: hidden;
+}
+
+@media (min-width: 320px) {
+  .wrapper {
+    margin: 0px 22px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    margin: 0px 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .wrapper {
+    margin: 0px 165px;
+  }
+}
+
 .back{
   &-shadow{
     z-index: -1;

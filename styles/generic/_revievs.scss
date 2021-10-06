@@ -3,22 +3,22 @@
   min-width: 0;
   margin-top: 86px;
 
-  &__title{
+  &__title {
     font-family: Gilroy-Bold;
     font-size: 32px;
     line-height: 40px;
   }
 
-  &-box{
+  &-box {
     display: grid;
   }
 
-  &__content{
+  &__content {
     display: grid;
     margin-top: 40px;
   }
 
-  &-cell{
+  &-cell {
     display: grid;
     justify-items: center;
     text-align: center;
@@ -26,15 +26,15 @@
     border: 0;
     border-radius: 6px;
     background-color: khaki;
-    
-    &__title{
+
+    &__title {
       margin-top: 32px;
       font-family: Gilroy-Regular;
       font-size: 18px;
       line-height: 28px;
     }
 
-    &__text{
+    &__text {
       margin: 0px 20px 40px 20px;
       font-family: Gilroy-Regular;
       font-size: 14px;
@@ -42,11 +42,22 @@
     }
   }
 
-  &-reviewer{
-
-    &__img{
+  &-reviewer {
+    &__img {
       width: 56px;
       height: 56px;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .revievs {
+    margin: 0px 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .revievs {
+    margin: 0px 165px;
   }
 }

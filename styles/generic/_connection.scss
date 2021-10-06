@@ -14,11 +14,11 @@
 
   &-step {
     display: grid;
+    justify-items: center;
   }
 
   &-cell {
     display: grid;
-    margin-bottom: 40px;
     justify-items: center;
     text-align: center;
 
@@ -69,11 +69,6 @@
       display: none;
     }
   }
-}
-
-.swiperConnection.swiper-slide {
-  display: grid;
-  justify-items: center;
 }
 
 .tel{
@@ -155,21 +150,27 @@
     }
   }
 
-  .swiperConnection.swiper-wrapper{
-    display: flex;
-  }
+  // .swiperConnection.swiper-wrapper{
+  //   display: flex;
+  // }
 
-  .swiperConnection.swiper-wrapper > div:nth-child(1){
-    display: grid;
-    justify-items: start;
-  }
-  .swiperConnection.swiper-wrapper > div:nth-child(2){
-    display: grid;
-    margin-top: 100px;
-    justify-items: center;
-  }
-  .swiperConnection.swiper-wrapper > div:nth-child(3){
-    display: grid;
-    justify-items: end;
-  }
+  // .swiperConnection.swiper-wrapper > div:nth-child(1){
+  //   display: grid;
+  //   justify-items: start;
+  // }
+  // .swiperConnection.swiper-wrapper > div:nth-child(2){
+  //   display: grid;
+  //   margin-top: 100px;
+  //   justify-items: center;
+  // }
+  // .swiperConnection.swiper-wrapper > div:nth-child(3){
+  //   display: grid;
+  //   justify-items: end;
+  // }
 }
+
+
+// .swiperConnection.swiper-slide {
+//   display: grid;
+//   justify-items: center;
+// }
