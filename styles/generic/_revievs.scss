@@ -1,7 +1,7 @@
 .revievs {
-  display: block;
-  min-width: 0;
-  margin-top: 86px;
+  display: grid;
+  text-align: center;
+  margin: 86px 22px 0px 22px;
 
   &__title {
     font-family: Gilroy-Bold;
@@ -11,6 +11,9 @@
 
   &-box {
     display: grid;
+    gap: 20px;
+    padding: 0px 15px 40px 15px;
+    justify-items: center;
   }
 
   &__content {
@@ -25,7 +28,8 @@
     gap: 8px;
     border: 0;
     border-radius: 6px;
-    background-color: khaki;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+    background-color: rgba(242, 247, 255, 0.5);
 
     &__title {
       margin-top: 32px;
@@ -43,21 +47,44 @@
   }
 
   &-reviewer {
+    display: grid;
+    gap: 16px;
+
     &__img {
+      grid-column: 1;
       width: 56px;
       height: 56px;
     }
   }
 }
 
+.reviewer{
+  &-inf{
+    display: grid;
+    grid-column: 2;
+
+    &__name{
+      font-family: GIlroy-Bold;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    &__email{
+      font-family: Gilroy-Regular;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
+
 @media (min-width: 768px) {
   .revievs {
-    margin: 0px 40px;
+    margin: 20px 40px;
   }
 }
 
 @media (min-width: 1440px) {
   .revievs {
-    margin: 0px 165px;
+    margin: 60px 165px;
   }
 }

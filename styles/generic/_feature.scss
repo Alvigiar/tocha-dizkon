@@ -1,7 +1,6 @@
 .feature {
   &-box{
     margin: 60px 0px 0px 0px;
-    padding: 0px 0px 60px 0px;
     display: grid;
     gap: 30px;
 
@@ -61,7 +60,6 @@
   .feature {
     &-box{
       margin: 133px 0px 0px 0px;
-      padding: 0px 0px 90px 0px;
       grid-template-columns: repeat(2, 1fr);
     }
 
@@ -88,7 +86,6 @@
   .feature {
     &-box{
       margin: 380px 0px 0px 0px;
-      padding: 0px 0px 180px 0px;
       align-items: center;
       gap: 68px 76px;
     }
