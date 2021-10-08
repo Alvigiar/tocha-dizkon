@@ -6,7 +6,6 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tocha Dizkon</title>
-  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
 </head>
 
 <body>
@@ -267,7 +266,8 @@
         <div class="activation-content__box activation-box">
           <div class="activation-box__title">Подключите Telegram чат уже сегодня</div>
           <form action="#" class="activation-box__form activation-form">
-            <input type="email" name="email" id="email" placeholder="Введите e-mail" class="activation-form__field-email">
+            <input type="email" name="email" id="email" placeholder="Введите e-mail"
+              class="activation-form__field-email">
             <input type="button" value="Отправить" class="activation-form__btn-send">
           </form>
         </div>
@@ -336,17 +336,49 @@
 
   </footer>
 
-  <div id="modalEntrance" class="modal-back">
+
+  <!-- modal old -->
+  <!-- <div id="modalEntrance" class="modal-back">
     <div class="modal-box">
       <div class="entrance">
 
       </div>
     </div>
+  </div> -->
+
+
+  <!-- modal new -->
+  <div class="modal">
+    <div class="modal-wrap">
+      <div class="modal-container">
+        <div class="entrance modal-box">
+          <span class="modal-box__btn-close"></span>
+          <span class="modal-box__title">Вход</span>
+          <div class="modal-box__content modal-content">
+            <input class="modal-content__login" type="tel" name="login" id="login" placeholder="Телефон">
+            <input class="modal-content__pass" type="password" name="pass" id="pass" placeholder="Пароль">
+            <a class="modal-content__remind-pass" href="/">Напомнить пароль</a>
+          </div>
+          <button class="modal-box__btn-enter" value="Войти">Войти</button>
+        </div>
+      </div>
+      <div class="modal-container">
+        <div class="register modal-box">
+          <span class="modal-box__btn-close"></span>
+          <span class="modal-box__title">Регистрация</span>
+          <div class="modal-box__content modal-content">
+            <input type="tel" name="login" id="login" placeholder="Телефон">
+            <input type="email" name="email" id="email" placeholder="Электронная почта">
+            <input type="password" name="pass" id="pass" placeholder="Пароль" />
+            <input type="password" name="doublee-pass" id="double-pass" placeholder="Повторите пароль" />
+          </div>
+          <button class="modal-box__btn-enter" value="Войти">Войти</button>
+        </div>
+      </div>
+    </div>
   </div>
 
 
-
-  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
   <script type="module" src="/main.js"></script>
 </body>
 

@@ -19,10 +19,13 @@
 // components footer
 @import './components/footer/footer';
 
-// components modal
-@import './components/modal/modal-entrance';
-@import './components/modal/modal-registration';
-@import './components/modal/modal';
+// components modal old
+// @import './components/modal/modal-entrance';
+// @import './components/modal/modal-registration';
+// @import './components/modal/modal';
+
+// component modal new
+@import './components/modal/modal-new';
 
 // components swiper
 @import './components/swiper/swiper';
