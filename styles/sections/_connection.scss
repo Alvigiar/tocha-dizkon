@@ -1,6 +1,6 @@
 .connection {
   margin: 54px 0px 0px 0px;
-  &-box{
+  &-box {
     display: grid;
     text-align: center;
 
@@ -35,7 +35,7 @@
       line-height: 26px;
     }
 
-    &__tel{
+    &__tel {
       display: grid;
       width: 100%;
       min-height: 300px;
@@ -71,32 +71,32 @@
   }
 }
 
-.tel{
-  &-one{
-    background-image: url('/img/step_1.png');
+.tel {
+  &-one {
+    background-image: url("/img/step_1.png");
   }
 
-  &-two{
-    background-image: url('/img/step_2.png');
+  &-two {
+    background-image: url("/img/step_2.png");
   }
 
-  &-three{
-    background-image: url('/img/step_3.png');
+  &-three {
+    background-image: url("/img/step_3.png");
   }
 }
 
 @media (min-width: 768px) {
-  .connection{
+  .connection {
     margin: 54px 40px 0px 40px;
 
-    &__title{
+    &__title {
       margin: 0px 0px 16px 0px;
     }
 
-    &-cell{
+    &-cell {
       width: 208px;
-      
-      &__text{
+
+      &__text {
         font-size: 14px;
         line-height: 22px;
       }
@@ -131,46 +131,22 @@
     }
   }
 
-  .tel{
-    &-one{
+  .tel {
+    &-one {
       width: 235px;
       height: 471px;
       background-position-x: left;
     }
 
-    &-two{
+    &-two {
       width: 270px;
       height: 560px;
     }
 
-    &-three{
+    &-three {
       width: 235px;
       height: 471px;
       background-position-x: right;
     }
   }
-
-  // .swiperConnection.swiper-wrapper{
-  //   display: flex;
-  // }
-
-  // .swiperConnection.swiper-wrapper > div:nth-child(1){
-  //   display: grid;
-  //   justify-items: start;
-  // }
-  // .swiperConnection.swiper-wrapper > div:nth-child(2){
-  //   display: grid;
-  //   margin-top: 100px;
-  //   justify-items: center;
-  // }
-  // .swiperConnection.swiper-wrapper > div:nth-child(3){
-  //   display: grid;
-  //   justify-items: end;
-  // }
 }
-
-
-// .swiperConnection.swiper-slide {
-//   display: grid;
-//   justify-items: center;
-// }

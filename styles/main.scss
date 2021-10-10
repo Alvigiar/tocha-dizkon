@@ -1,31 +1,15 @@
-// variable
 @import './variable/variable';
 @import './fonts/fonts';
-
-// generic
 @import './generic/generic';
-@import './generic/chatroom';
-@import './generic/feature';
-@import './generic/tariff';
-@import './generic/connection';
-@import './generic/revievs';
-@import './generic/activation';
-
-// componenst header
+@import './sections/chatroom';
+@import './sections/feature';
+@import './sections/tariff';
+@import './sections/connection';
+@import './sections/revievs';
+@import './sections/activation';
 @import './components/header/header';
 @import './components/header/logo';
 @import './components/header/burger';
-
-// components footer
 @import './components/footer/footer';
-
-// components modal old
-// @import './components/modal/modal-entrance';
-// @import './components/modal/modal-registration';
-// @import './components/modal/modal';
-
-// component modal new
-@import './components/modal/modal-new';
-
-// components swiper
+@import './components/modal/modal';
 @import './components/swiper/swiper';

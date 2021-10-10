@@ -32,7 +32,7 @@
   &-option {
     overflow: hidden;
     display: grid;
-    margin: 0px 15px;
+    margin: 0px 10px;
     text-align: center;
     justify-items: center;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
@@ -83,7 +83,13 @@
   }
 }
 
-
+@media (min-width: 758px) {
+  .tariff{
+    &-option{
+      margin: 0px 15px;
+    }
+  }
+}
 
 @media (min-width:768px) {
   .tariff{
