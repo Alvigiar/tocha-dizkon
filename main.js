@@ -1,6 +1,5 @@
 import './styles/main.scss';
 import './node_modules/normalizecss/normalize.css';
-
 import Swiper, { Navigation, Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -14,10 +13,9 @@ const headContent = document.querySelector('.header-content')
 const burgerToggle = document.querySelector('.header-burger__toggle')
 const btnEntranceOpen = document.querySelector('.header-cell__btn-input')
 const btnRegisterOpen = document.querySelector('.header-cell__btn-reg')
-const modalEntranceBox = document.querySelector('.entrance')
-const modalRegisterBox = document.querySelector('.register')
 const modalBox = document.querySelector('.modal')
-const modalBtnClose = document.querySelectorAll('.modal-box__btn-close')
+const btnModalClose = document.querySelectorAll('.modal-box__btn-close')
+const widthScroll = window.innerWidth - document.body.offsetWidth
 
 var swiperTariff = new Swiper(".swiperTariff", {
   slidesPerView: 1,
@@ -74,48 +72,70 @@ burgerBtn.addEventListener('click', () => {
 })
 
 btnEntranceOpen.addEventListener('click', () => {
-  let btnEntranceOpen = new Modal(open)
-  btnEntranceOpen.modalEntranceOpen()
+  let entranceOpen = new Modal(htmlBody, headContent, burgerToggle, modalBox)
+  entranceOpen.modalEntranceOpen()
 })
 
 btnRegisterOpen.addEventListener('click', () => {
-  let btnRegisterOpen = new Modal(open)
-  btnRegisterOpen.modalRegisterOpen()
+  let registerOpen = new Modal(htmlBody, headContent, burgerToggle, modalBox)
+  registerOpen.modalRegisterOpen()
 })
 
-modalBtnClose.forEach(element => {
+btnModalClose.forEach(element => {
   element.addEventListener('click', () => {
-    let modalBtnClose = new Modal(close)
-    modalBtnClose.modalClose()
+    let modalClose = new Modal(htmlBody, headContent, burgerToggle, modalBox)
+    modalClose.modalClose()
   })
 })
 
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    let btnModalClose = new Modal(htmlBody, headContent, burgerToggle, modalBox)
+    btnModalClose.modalClose()
+  }
+})
+
+modalBox.addEventListener('click', (e) => {
+  if (e.target == document.querySelector('.modal')) {
+    let btnModalClose = new Modal(htmlBody, headContent, burgerToggle, modalBox)
+    btnModalClose.modalClose()
+  }
+})
+
 class Modal {
-  constructor(open, close) {
-    this.open = open
-    this.close = close
+  constructor(htmlBody, headContent, burgerToggle, modalBox) {
+    this.htmlBody = htmlBody
+    this.headContent = headContent
+    this.burgerToggle = burgerToggle
+    this.modalBox = modalBox
+    this.entranceBox = document.querySelector('.entrance')
+    this.registerBox = document.querySelector('.register')
+    this.btnClose = document.querySelectorAll('.modal-box__btn-close')
   }
 
-  modalEntranceOpen(open) {
-    modalEntranceBox.classList.add('modal-entrance--show')
+  modalEntranceOpen() {
+    this.entranceBox.classList.add('modal-entrance--show')
+    this.htmlBody.classList.add('off')
+    this.headContent.classList.remove('active')
+    this.burgerToggle.classList.remove('cross')
+    this.htmlBody.style.paddingRight = widthScroll
     modalBox.classList.add('modal--show')
-    htmlBody.classList.add('off')
-    headContent.classList.remove('active')
-    burgerToggle.classList.remove('cross')
   }
 
-  modalRegisterOpen(open) {
-    modalRegisterBox.classList.add('modal-register--show')
+  modalRegisterOpen() {
+    this.registerBox.classList.add('modal-register--show')
+    this.htmlBody.classList.add('off')
+    this.headContent.classList.remove('active')
+    this.burgerToggle.classList.remove('cross')
+    this.htmlBody.style.paddingRight = widthScroll
     modalBox.classList.add('modal--show')
-    htmlBody.classList.add('off')
-    headContent.classList.remove('active')
-    burgerToggle.classList.remove('cross')
   }
 
-  modalClose(close) {
-    modalEntranceBox.classList.remove('modal-entrance--show')
-    modalRegisterBox.classList.remove('modal-register--show')
+  modalClose() {
+    this.entranceBox.classList.remove('modal-entrance--show')
+    this.registerBox.classList.remove('modal-register--show')
+    this.htmlBody.classList.remove('off')
+    this.htmlBody.style.paddingRight = ''
     modalBox.classList.remove('modal--show')
-    htmlBody.classList.remove('off')
   }
 }

@@ -28,6 +28,7 @@
       &-close::after {
         position: absolute;
         content: "";
+        right: 15px;
         height: 33px;
         width: 3px;
         background-color: $blue;

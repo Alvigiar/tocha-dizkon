@@ -1,6 +1,6 @@
 @media (max-width: 767px) {
   .header {
-    &-burger {
+    .header-burger {
       position: relative;
       width: 30px;
       height: 18px;
@@ -12,21 +12,23 @@
         height: 2px;
       }
 
-      &__toggle > span::before,
-      &__toggle > span,
-      &__toggle > span::after {
+      &__toggle>span::before,
+      &__toggle>span,
+      &__toggle>span::after {
         position: absolute;
         width: 100%;
         height: 2px;
         transition: 0.3s;
         background-color: $blue;
       }
-      &__toggle > span::before {
+
+      &__toggle>span::before {
         content: "";
         top: 9px;
         background-color: #33afe1;
       }
-      &__toggle > span::after {
+
+      &__toggle>span::after {
         content: "";
         top: 18px;
         background-color: #18e1f7;
@@ -51,16 +53,16 @@
     }
   }
 
-  .cross > span {
+  .header-burger__toggle.cross>span {
     background-color: $white;
   }
 
-  .cross > span::before {
+  .header-burger__toggle.cross>span::before {
     background-color: $blue;
     transform: rotate(45deg);
   }
 
-  .cross > span::after {
+  .header-burger__toggle.cross>span::after {
     background-color: $blue;
     transform: translateY(-9px) rotate(-45deg);
   }
