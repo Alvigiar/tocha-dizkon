@@ -41,7 +41,7 @@
       justify-content: center;
       position: absolute;
       top: -100px;
-      right: -100px;
+      // right: -100px;
       transition: 0.3s;
 
       &__cell {
@@ -67,7 +67,14 @@
     transform: translateY(-9px) rotate(-45deg);
   }
 
-  .active {
+  .menu--hide {
+    display: grid;
+    opacity: 0;
+  }
+
+  .menu--active {
+    display: grid;
+    opacity: 1;
     width: 100%;
     height: 100%;
     top: 0;

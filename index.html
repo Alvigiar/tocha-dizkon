@@ -25,8 +25,8 @@
         </div>
         <div class="header-box__content header-content">
           <div class="header-content__cell header-cell">
-            <button class="header-cell__btn-input btn">Вход</button>
-            <button class="header-cell__btn-reg btn">Регистрация</button>
+            <input type="button" value="Вход" class="header-cell__btn-input btn" id="open-entrance">
+            <input type="button" value="Регистрация" class="header-cell__btn-reg btn" id="open-register">
           </div>
         </div>
       </div>
@@ -335,12 +335,11 @@
 
   </footer>
 
-
-  <div class="modal">
-    <div class="modal-wrap">
-      <div class="modal-container">
-        <div class="entrance modal-box">
-          <span class="modal-box__btn-close"></span>
+  <div id="modal-entrance" class="modal">
+    <div class="modal-container wrapper">
+      <span class="modal__btn-close"></span>
+      <div class="modal-box">
+        <div class="modal-box__cell entr">
           <span class="modal-box__title">Вход</span>
           <div class="modal-box__content modal-content">
             <input class="modal-content__login" type="tel" name="login" id="loginInput" placeholder="Телефон">
@@ -350,15 +349,20 @@
           <button class="modal-box__btn-enter" value="Войти">Войти</button>
         </div>
       </div>
-      <div class="modal-container">
-        <div class="register modal-box">
-          <span class="modal-box__btn-close"></span>
+    </div>
+  </div>
+
+  <div id="modal-register" class="modal">
+    <div class="modal-container wrapper">
+      <span class="modal__btn-close"></span>
+      <div class="modal-box">
+        <div class="modal-box__cell regist">
           <span class="modal-box__title">Регистрация</span>
           <div class="modal-box__content modal-content">
-            <input type="tel" name="login" id="loginReg" placeholder="Телефон">
-            <input type="email" name="email" id="emailReg" placeholder="Электронная почта">
-            <input type="password" name="pass" id="pass" placeholder="Пароль" />
-            <input type="password" name="doublee-pass" id="double-pass" placeholder="Повторите пароль" />
+            <input type="tel" name="login" id="regLogin" placeholder="Телефон">
+            <input type="email" name="email" id="regEmail" placeholder="Электронная почта">
+            <input type="password" name="pass" id="regPass" placeholder="Пароль">
+            <input type="password" name="doublee-pass" id="regDoublePass" placeholder="Повторите пароль">
           </div>
           <button class="modal-box__btn-enter" value="Войти">Войти</button>
         </div>

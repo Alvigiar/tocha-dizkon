@@ -1,143 +1,134 @@
 .modal {
-  display: none;
-  position: absolute;
-  justify-items: center;
-  align-items: center;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(183, 183, 183, 0.6);
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	transition: 0.5s;
+	justify-items: center;
+	align-items: center;
+	background: rgb(2, 0, 36, 0.5);
 
-  &-box {
-    display: none;
-    align-items: center;
-    background-color: white;
+	&__btn-close {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		width: 32px;
+		height: 32px;
+		cursor: pointer;
+	}
 
-    &__btn {
-      &-close {
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin-top: 8px;
-        width: 32px;
-        height: 32px;
-      }
+	&__btn-close::before,
+	&__btn-close::after {
+		content: "";
+		right: 15px;
+		position: absolute;
+		height: 33px;
+		width: 3px;
+		background-color: blue;
+	}
 
-      &-close::before,
-      &-close::after {
-        position: absolute;
-        content: "";
-        right: 15px;
-        height: 33px;
-        width: 3px;
-        background-color: $blue;
-      }
-      &-close::before {
-        transform: rotate(45deg);
-      }
-      &-close:after {
-        transform: rotate(-45deg);
-      }
+	&__btn-close::before {
+		transform: rotate(45deg);
+	}
 
-      &-enter {
-        padding: 12px 0px;
-        border: 0;
-        border-radius: 6px;
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
-        background: $blue;
-        color: white;
-      }
-    }
+	&__btn-close::after {
+		transform: rotate(-45deg);
+	}
 
-    &__title {
-      justify-self: center;
-      font-family: Gilroy-Bold;
-      font-size: 32px;
-      line-height: 32px;
-      color: $blue;
-    }
-  }
+	&-container {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		border-radius: 5px;
+		box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+		background-color: white;
+	}
 
-  &-container {
-    display: grid;
-    margin: 0 auto;
-    position: relative;
-    gap: 32px;
-  }
+	&-box {
+		display: grid;
+		align-items: center;
 
-  &-content {
-    display: grid;
-    gap: 10px;
+		&__title {
+			justify-self: center;
+			font-weight: 800;
+			font-size: 32px;
+			line-height: 32px;
+			color: blue;
+		}
 
-    &__remind-pass {
-      justify-self: end;
-      font-family: Gilroy-Regular;
-      font-size: 12px;
-      line-height: 16px;
-      text-decoration: none;
-      color: $blue;
-    }
-  }
+		&__cell {
+			display: grid;
+			margin: 105px 70px 0px 70px;
+			align-items: center;
+			gap: 32px;
+		}
 
-  &-content > input {
-    padding: 16px 20px;
-    border: 0;
-    border-radius: 4px;
-    background: #f7f7fd;
-  }
+		&__cell.entr {
+			margin-bottom: 140px;
+		}
 
-  &-content > input::placeholder {
-    font-family: Gilroy-Regular;
-    font-size: 16px;
-    line-height: 24px;
-    color: black;
-  }
+		&__cell.regist {
+			margin-bottom: 63px;
+		}
+	}
 
-  &--show {
-    display: grid;
-    z-index: 100;
-  }
+	&-content {
+		display: grid;
+		gap: 10px 0px;
 
-  &-entrance {
-    &--show {
-      display: grid;
-      gap: 32px;
-      padding: 45px 35px;
-    }
-  }
-
-  &-register {
-    &--show {
-      display: grid;
-      gap: 32px;
-      padding: 45px 35px;
-    }
-  }
+		&__remind-pass {
+			justify-self: end;
+			font-size: 12px;
+			line-height: 16px;
+			text-decoration: none;
+			color: blue;
+		}
+	}
 }
 
-@media (min-width: 720px) {
-  .modal {
-    &-box {
-      &__btn {
-        &-close {
-          margin: 26px 16px 0px 0px;
-        }
-      }
-    }
+.modal--hide {
+	display: grid;
+	opacity: 0;
+}
 
-    &-entrance {
-      &--show {
-        width: 340px;
-        padding: 105px 70px 139px 70px;
-      }
-    }
+.modal--show {
+	display: grid;
+	opacity: 1;
+}
 
-    &-register {
-      &--show {
-        width: 340px;
-        padding: 105px 70px 63px 70px;
-      }
-    }
-  }
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+	background: #f7f7fd;
+	padding: 8px 0px 8px 20px;
+	border: 0;
+	border-radius: 4px;
+}
+
+button[value="Войти"] {
+	padding: 12px 145px;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+	border: 0;
+	border-radius: 6px;
+	font-size: 18px;
+	line-height: 24px;
+	background-color: blue;
+	color: white;
+}
+
+@media (max-width: 767px) {
+	.modal {
+		&-box {
+			&__cell {
+				margin: 52px 25px 0px 25px;
+			}
+		}
+	}
+
+	button[value="Войти"] {
+		padding: 6px 72px;
+	}
 }
